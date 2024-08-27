@@ -1,4 +1,4 @@
-import { sharingInformationServices } from "../services/sharing-information.services"
+import { sharingInformationServices } from "../../services/sharing-information.services"
 
 const Component1 = () => {
     const handleClick = () => {

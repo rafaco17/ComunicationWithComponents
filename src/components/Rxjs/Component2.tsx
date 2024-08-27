@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { sharingInformationServices } from "../services/sharing-information.services"
+import { sharingInformationServices } from "../../services/sharing-information.services"
 
 const Component2 = () => {
     const [count, setCount] = useState(0);

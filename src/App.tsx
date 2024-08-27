@@ -1,34 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Component1 from './components/Component1'
+import Component2 from './components/Component2'
+
+// Redux usamos para compartir inforamción entre componentes de diferentes páginas (principalmente relacionado con entidades, ejm: carrito de compra de Amazon, este siempre esta presente a pesar que vallamos a cualquier página)
+// Context usamos para compartir información entre componentes de una misma vista (la misma page) 
+// Rxjs usamos para compatir información entre componentes pero para eventos muy simples
+
+// Rxjs npm install rxjs
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Component1 />
+      <Component2 />
+    </div>
   )
 }
 
